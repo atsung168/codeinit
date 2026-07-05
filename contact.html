@@ -9,27 +9,40 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <div class="bg-glow"></div>
-  <div class="bg-glow-2"></div>
-
-  <nav>
-    <a href="index.html" class="nav-brand">CodeInit</a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="clients.html">Clients</a>
-      <a href="contact.html" class="active">Contact</a>
-    </div>
-  </nav>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-brand">CodeInit</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <section class="section">
+    <section class="page-hero contact-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>Let’s talk about the system you need to build, modernize, or stabilize.</h1>
+      <p>
+        Share the goal, constraints, and timeline. CodeInit can help clarify the
+        technical path and support delivery from architecture through launch.
+      </p>
+    </section>
+
+    <section class="section contact-section">
       <div class="contact-card">
-        <h3>Let's Build Something Great</h3>
-        <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
-          Ready to transform your digital strategy? Get in touch to discuss your next project.
+        <p class="eyebrow">Direct contact</p>
+        <h2>Start with a short email.</h2>
+        <p>
+          Describe the project, the current technical situation, and what kind of
+          help would make the next decision easier.
         </p>
-        <p style="margin-bottom: 1rem; font-size: 1.2rem;"><strong>Alex Tsung</strong></p>
-        <a href="mailto:codeinit@gmail.com" class="contact-email">codeinit@gmail.com</a>
+        <div class="contact-person">
+          <span>Alex Tsung</span>
+          <a href="mailto:codeinit@gmail.com" class="contact-email">codeinit@gmail.com</a>
+        </div>
+        <a href="mailto:codeinit@gmail.com" class="button button-primary">Email CodeInit</a>
       </div>
     </section>
   </main>

@@ -9,60 +9,127 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <div class="bg-glow"></div>
-  <div class="bg-glow-2"></div>
-
-  <nav>
-    <a href="index.html" class="nav-brand">CodeInit</a>
-    <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="clients.html">Clients</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-brand">CodeInit</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <section class="hero">
-      <h1>Architecting <span>Digital Success</span></h1>
-      <p>
-        At CodeInit Consulting Services Inc, we specialize in delivering robust,
-        scalable, and modern software solutions tailored to your unique business needs.
-        With over 20 years of industry experience, we combine deep technical expertise
-        with practical business insight.
-      </p>
+    <section class="hero hero-home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">CodeInit Consulting Services Inc</p>
+        <h1>Software architecture and cloud consulting for serious delivery.</h1>
+        <p>
+          We help teams design, modernize, and ship robust software systems with
+          senior engineering judgment, practical business context, and more than
+          20 years of industry experience.
+        </p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a href="contact.html" class="button button-primary">Start a conversation</a>
+          <a href="clients.html" class="button button-secondary">View client work</a>
+        </div>
+        <dl class="hero-proof">
+          <div>
+            <dt>20+</dt>
+            <dd>years experience</dd>
+          </div>
+          <div>
+            <dt>Azure</dt>
+            <dd>cloud platforms</dd>
+          </div>
+          <div>
+            <dt>Full-stack</dt>
+            <dd>delivery leadership</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
-    <section class="section">
+    <section class="section section-intro">
       <div class="section-header">
-        <h2>Our Services</h2>
+        <p class="eyebrow">Services</p>
+        <h2>Senior engineering support from strategy to shipped software.</h2>
+        <p>
+          CodeInit works where product, architecture, cloud infrastructure, and delivery
+          process need to line up cleanly.
+        </p>
       </div>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">💻</div>
-          <h3>Custom Software Dev</h3>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5h16v11H4z"/><path d="M8 20h8"/><path d="M10 16l-1 4"/><path d="M14 16l1 4"/></svg>
+          </div>
+          <h3>Custom Software Development</h3>
           <p>End-to-end solutions built from the ground up, using agile methodologies and industry best practices.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">🏗️</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 18V8l8-4 8 4v10"/><path d="M8 10h8"/><path d="M8 14h8"/><path d="M12 4v16"/></svg>
+          </div>
           <h3>Full-Stack Architecture</h3>
           <p>Expertise in .NET, Angular, React, and modern front-end frameworks, backed by well-structured APIs.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">☁️</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .4-8 6 6 0 0 0-11.1-2A5 5 0 0 0 7 18z"/></svg>
+          </div>
           <h3>Cloud Integration</h3>
           <p>Azure-based solutions including Functions, Logic Apps, Service Bus, and Cosmos DB for scale and security.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">🚀</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 17l5-5"/><path d="M13 5l6 6-8 8H5v-6z"/><path d="M15 7l2 2"/><path d="M9 19l-4 2 2-4"/></svg>
+          </div>
           <h3>DevOps & CI/CD</h3>
           <p>Automated pipelines with Azure DevOps, GitHub Actions, and Octopus Deploy for fast, reliable delivery.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">💡</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 4H9c0-2 0-3-1-4z"/></svg>
+          </div>
           <h3>Technical Leadership</h3>
           <p>Fractional CTO support, system audits, technical roadmap planning, and team mentorship.</p>
         </div>
       </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="section-header section-header-left">
+        <p class="eyebrow">How we work</p>
+        <h2>Calm execution for complex systems.</h2>
+      </div>
+      <div class="process-grid">
+        <div>
+          <span>01</span>
+          <h3>Clarify the system</h3>
+          <p>Map business goals, technical constraints, dependencies, and delivery risk before committing to a direction.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Design the path</h3>
+          <p>Shape architecture, integrations, cloud services, and team workflow into a practical implementation plan.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Ship with confidence</h3>
+          <p>Build, automate, review, and mentor so the solution can be operated and extended after launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div>
+        <p class="eyebrow">Ready when the architecture matters</p>
+        <h2>Bring senior technical direction into your next project.</h2>
+      </div>
+      <a href="contact.html" class="button button-primary">Contact CodeInit</a>
     </section>
   </main>
 
